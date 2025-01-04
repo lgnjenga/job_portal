@@ -9,7 +9,7 @@ var cors = require("cors");
 //database connection
 mongoose.connect(process.env.DATABASE, {
     useNewUrlParser: true,
-    useUnifiedTopolofy: true,
+    useUnifiedTopology: true,
     useCreateIndex: true,
     useFindAndModify: false
 }).then(()=>console.log("DB connected")).catch((err)=>console.log(err));
